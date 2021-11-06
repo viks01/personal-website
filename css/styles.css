@@ -1,0 +1,149 @@
+body {	
+    margin: 0;
+	background-color: #d0f0c0;
+}
+
+#content {
+    /* font-size: medium; */
+    float: center;
+    text-align: justify;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#logos {
+    font-size: medium;
+    float: center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+  
+h1 {
+    font-size: 50px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h3 {
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.nav a:hover {
+    background-color: whitesmoke;
+    color: #303036;
+}
+
+.nav {
+    overflow: hidden;
+    background-color: #303036;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav a {
+    float: left;
+	display: block;
+	color: #d0f0c0;
+	text-align: center;
+	padding: 15px 15px;
+	text-decoration: none;
+	font-size: 30px; 
+}
+
+.nav .menu {
+    display: none;
+}
+
+.logo {
+    max-height: 100%;
+    height: 100px;
+    width: 100px;
+}
+
+table {
+    border: 2px solid black;
+    width: 50%;
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid black;
+    text-align: center;
+    height: fit-content;
+    padding: 10px;
+    font-size: 20px;
+}
+
+td {
+    border: 1px solid black;
+    text-align: center;
+    height: fit-content;
+    padding: 10px;
+    font-size: large;
+}
+
+#random {
+    height: 500px;
+    width: 500px;
+    cursor: pointer;
+}
+
+#pets {
+    border: 2px solid red;
+    background-color: rosybrown;
+}
+
+#like {
+    height: 100px;
+    width: 125px;
+    cursor: pointer;
+    float: left;
+}
+
+#like-info {
+    font-size: large;
+}
+
+#profile_pic {
+    /* width: 433px;
+    height: 578px; */
+    width: 385px;
+    height: 385px;
+    float: left;
+    padding: 40px;
+}
+
+#puppies {
+    height: 369px;
+    width: 560px;
+}
+
+.Label {
+    font-size: 20px;
+}
+
+input
+{
+    margin-top: 1%;
+    font-size: larger;
+    line-height: 25px;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.add-row {
+    height: 35px;
+    width: 85px;
+    font-size: 20px;
+    background-color: skyblue;
+}
+

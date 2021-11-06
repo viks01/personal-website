@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Vikram Rao</title>
+        <link rel="stylesheet" type="text/css" href="../css/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="../js/script1.js"></script>
+        
+    </head>
+    <body>
+        <header>
+            <div class="nav" id="navbar">
+                <a href="index.html">Home</a>
+                <a href="#" class="active" style="color: aqua">Skills</a>
+                <a href="contact.html">Contact Me</a>
+            </div>
+        </header>
+        <br>
+        <br>
+        <br>
+        <br>
+        <ul>
+            <h3><li>Add Skills Here</li></h3>
+            <form id="skillForm" name="skillForm" method="POST" onsubmit="return validateForm()">
+                <label id="Name" class="Label">
+                    Name: &nbsp; &nbsp;
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                </label>
+                <br>
+                <br>
+                <label id="Skill" class="Label">
+                    Skill: &nbsp; &nbsp; &nbsp;
+                    <input type="text" id="skill" name="skill" placeholder="Enter a skill">
+                </label>
+                <br>
+                <br>
+                <label id="Level" class="Label">
+                    Level: &nbsp; &nbsp;
+                    <input type="text" id="level" name="level" list="level-list" placeholder="Proficiency">
+                    <datalist id="level-list">
+                        <option value="Beginner">Beginner</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Proficient">Proficient</option>
+                    </datalist>
+                </label>
+                <br>
+                <br>
+                <br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <button type="submit" class="add-row">Submit</button>
+            </form>
+            <br>
+            <br>
+            <br>
+            <table id="skillTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Skill</th>
+                        <th>Level</th>
+                    </tr>
+                </thead>
+                <tbody id="InsertHere"></tbody>
+            </table>
+            <br>
+            <br>
+            <br>
+            <h3><li>Random Images (Click to change)</li></h3>
+            <img src="../img/ferrari.jpeg" id="random" alt="ferrari" onclick="change_image()">
+            <br>
+            <br>
+            <br>
+            <h3><li>Random Table (Random stats)</li></h3>
+            <table id="pets">
+                <tr>
+                    <td rowspan="2" colspan="2"></td>
+                    <th colspan="2">Gender</th>
+                </tr>
+                <tr>
+                    <td>Male</td>
+                    <td>Female</td>
+                </tr>
+                <tr>
+                    <th rowspan="3">Preference</th>
+                    <td>Prefers dogs</td>
+                    <td>36</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>Prefers cats</td>
+                    <td>8</td>
+                    <td>26</td>
+                </tr>
+                <tr>
+                    <td>No preference</td>
+                    <td>2</td>
+                    <td>6</td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <br>
+            <h3><li>Like button!</li></h3>
+            <img src="../img/like-button.png" id="like" alt="like button" onclick="update_likes()">
+            <br>
+            <p id="like-info"></p>
+        </ul>
+    </body>
+</html>
